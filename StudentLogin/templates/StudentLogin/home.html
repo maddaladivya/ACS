@@ -36,7 +36,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">CIR@AMRITA</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Amrita Courier Service</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -45,14 +45,12 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a href="{% url 'login' %}">Login</a>
                     </li>
                     <li>
-                        <a href="http://127.0.0.1:8000/student/login/">Login</a>
-                    </li>
-                    <li>
-                        <a href="http://127.0.0.1:8000/student/register/">SignUp</a>
+                        <a href="{% url 'register' %}">SignUp</a>
                     </li>
                 </ul>
             </div>
@@ -70,46 +68,7 @@
             </div>
         </div>
     </header>
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About CIR</h2>
-                    <h3 class="section-subheading text-muted">Begin your journey here and lets proceed!</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-
-                        <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-
-                        <i class="fa fa-tasks" aria-hidden="true"></i>
-
-                    </span>
-                    <h4 class="service-heading">Placements</h4>
-                    <p class="text-muted">We have 100% placements and stood first in all private institutes in India.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Companies</h4>
-                    <p class="text-muted">Google, Microsoft and all other companies with a package of 25lakh takes Amrita students.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Contact Info</h4>
-                    <p class="text-muted">For more details Contact: Amrita University, <br>Amrita Vishwa Vidyapeetham <br>Amritanagar, Coimbatore - 641 112 <br>Tamilnadu, India<br>+91 422 2685000<br>Fax: +91-422-2686274</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- jQuery -->
     <script src="/static/StudentLogin/vendor/jquery/jquery.min.js"></script>

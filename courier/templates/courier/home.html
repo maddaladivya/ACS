@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>StudentLogin</title>
+    <title>Courier</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/static/StudentLogin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -47,19 +47,7 @@
                     </li>
 
                     <li>
-                      {% if request.user.is_authenticated %}<a href="{% url 'profile' request.user.id %}">{{ request.user.username }}</a>
-                      {% else %}<a href="{% url 'login' %}">login</a>{% endif %}
-                    </li>
-
-
-                    <li>
-                        <a href="{% url 'ticket' %}">Request</a>
-                    </li>
-                    <li>
-                        <a href="#">All Couriers</a>
-                    </li>
-                    <li>
-                    <a href="{% url 'logout' %}">Logout</a>
+                        <a href="{% url 'order' %}">Orders</a>
                     </li>
                 </ul>
             </div>

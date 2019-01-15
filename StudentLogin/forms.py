@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth.models import User
-
+from StudentLogin.models import Tickets
 
 class UserForm(forms.ModelForm):
     username = forms.CharField(help_text='Enter your last name',
@@ -14,3 +14,7 @@ class UserForm(forms.ModelForm):
         fields = ('username', 'email', 'password')
 
 
+class TicketForm(forms.ModelForm):
+    class Meta:
+        model = Tickets
+        fields = ('courierid', 'user')

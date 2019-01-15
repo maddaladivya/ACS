@@ -21,7 +21,6 @@ from cir1 import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^cir1/', include('cir.urls')),
     url(r'^student/', include('StudentLogin.urls')),
-    url(r'^faculty/', include('faculty.urls'))
+    url(r'^courier/', include('courier.urls')),
 ]

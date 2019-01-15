@@ -37,10 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cir',
-    'multiselectfield',
     'StudentLogin',
-    'faculty',
+    'courier'
 ]
 
 MIDDLEWARE = [
@@ -117,15 +115,19 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sarvanimini@gmail.com'
+EMAIL_HOST_PASSWORD = 'sarvani2410'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-LOGIN_REDIRECT_URL = '/student/index/'
+LOGIN_REDIRECT_URL = '/student/index'
 LOGOUT_REDIRECT_URL = '/student/home/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
