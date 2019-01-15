@@ -4,5 +4,5 @@ from courier import views
 
 urlpatterns = [
     url(r'^home/$', views.home.as_view(), name="home"),
-    url(r'^order/$', views.Order.as_view(), name="order"),
+    url(r'^order/$', views.Order, name="order"),
 ]
